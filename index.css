@@ -1,3 +1,82 @@
+:root {
+    --font-size-desktop: 16px;
+    --line-height-desktop: 1.6;
+    --font-size-tablet: 14px;
+    --line-height-tablet: 1.5;
+    --font-size-mobile: 12px;
+    --line-height-mobile: 1.4;
+    --font-size-small-mobile: 11px;
+    --line-height-small-mobile: 1.3;
+    --padding-desktop: 20px;
+    --padding-tablet: 15px;
+    --padding-mobile: 10px;
+    --padding-small-mobile: 8px;
+  }
+  
+/* Estilos Gerais (Desktop) */
+body {
+    font-size: var(--font-size-desktop);
+    line-height: var(--line-height-desktop);
+  }
+  
+  .container {
+    padding: var(--padding-desktop);
+  }
+  
+  /* Telas médias (Tablets) */
+  @media (max-width: 768px) {
+    body {
+      font-size: var(--font-size-tablet);
+      line-height: var(--line-height-tablet);
+    }
+  
+    .container {
+      padding: var(--padding-tablet);
+    }
+  }
+  
+  /* Telas pequenas (Smartphones) */
+  @media (max-width: 576px) {
+    body {
+      font-size: var(--font-size-mobile);
+      line-height: var(--line-height-mobile);
+    }
+  
+    .container {
+      padding: var(--padding-mobile);
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  /* Telas extra pequenas (Smartphones pequenos) */
+  @media (max-width: 375px) {
+    body {
+      font-size: var(--font-size-small-mobile);
+      line-height: var(--line-height-small-mobile);
+    }
+  
+    .container {
+      padding: var(--padding-small-mobile);
+    }
+  
+    .header {
+      font-size: 18px;
+    }
+  
+    .footer {
+      font-size: 10px;
+    }
+  }
+  
+
+
 .container img  {
 
     width: 10%;
